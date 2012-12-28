@@ -11,7 +11,7 @@ bouncyIcons.dropAndBounce = function (selector) {
     };
 
     $(selector).animate({
-        top:$(document).height() / 2
+        top:"50%"
     }, {
         duration:650,
         complete:upAndDown,
