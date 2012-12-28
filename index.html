@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="http://www.cornify.com/js/cornify.js"></script>
+    <script src="js/bouncyicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>
+        $(document).ready(function () {
+            $(window).unload(function () {});
+
+            bouncyIcons.dropIcons(["#1", "#2", "#3", "#4"], true);
+
+            bouncyIcons.addBouncyLinkToElement("#1", "http://lnkd.in/Pc5FFH", 50);
+            bouncyIcons.addBouncyLinkToElement("#2", "downloads/MattFowlerResume2012.pdf", 50);
+            bouncyIcons.addBouncyLinkToElement("#3", "https://github.com/mattfowler", 50);
+            bouncyIcons.addBouncyLinkToElement("#4", "http://www.cyrusinnovation.com", 50);
+
+            bouncyIcons.addExpansionToElement(".iconlink", 30);
+
+            //Don't ask any questions about these lines and ruin the magic for yourself.
+
+            $(".easter").mouseenter(function (object) {
+                $(".ponies").animate({top:"+=150"}, 250);
+            });
+
+            var ponies = $(".ponies");
+            ponies.click(function (object) {
+                cornify_add();
+            });
+
+            ponies.mouseleave(function (object) {
+                $(".ponies").animate({top:"-=150"}, 250);
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="ponies">
+    <img src="img/ponies.png"/>
+</div>
+<div class="easter"></div>
+
+<br>
+<br>
+<h1>MATTHEW FOWLER</h1>
+<br>
+
+<p>agile software engineer</p>
+
+<div class="icon" id="1" style="left: 15%;">
+    <div class="iconlink"
+         style="background:#4875B4;background-image:url(img/linkedin-128.png);background-size:100px"></div>
+    <label class="iconLabel" for="1" style="left: 20%">Linked in</label>
+</div>
+
+<div class="icon" id="2" style="left: 35%;">
+    <div class="iconlink"
+         style="background:#008b8b;background-image:url(img/blank-file-5-128.png);background-size:100px"></div>
+    <label class="iconLabel" for="2" style="left: 25%;">Resume</label>
+</div>
+
+<div class="icon" id="3" style="left: 55%;">
+    <div class="iconlink"
+         style="background:#00ced1;background-image:url(img/github-logo-transparent.png);background-size:100px"></div>
+    <label for="3" class="iconLabel" style="left: 25%;">Github</label>
+</div>
+<div class="icon" id="4" style="left: 75%;">
+    <div class="iconlink"
+         style="background:#4682b4;display: inline-block;background-image:url(img/cyrus.png);background-size:100px"></div>
+    <label for="4" class="iconLabel" style="left: 11%;">My Company</label>
+</div>
+
+</body>
+</html>

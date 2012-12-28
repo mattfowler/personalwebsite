@@ -1,0 +1,59 @@
+.icon {
+    top: -150px;
+    text-align:center;
+    width: 130px;
+    height:160px;
+    position: absolute
+}
+
+.iconlink {
+    height:100px;
+    width:100px;
+    border-radius: 15px;
+    display:inline-block;
+}
+
+.easter {
+    width:10px;
+    height:10px;
+    bottom:0px;
+    left:100%;
+    float:right;
+}
+
+.ponies {
+    top: -150px;
+    right:0px;
+    position: absolute;
+}
+
+body {
+    background-color:#fffaf0;
+}
+p,label  {
+    font-family: Gill Sans, Verdana;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.iconLabel {
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+h1 {
+    font-family: Gill Sans, Verdana;
+    color: #444;
+    margin: 0;
+    padding: 0px 0px 6px 0px;
+    font-size: 51px;
+    line-height: 44px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    text-align: center;
+}
