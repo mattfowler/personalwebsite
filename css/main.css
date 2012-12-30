@@ -42,7 +42,6 @@ p,label  {
 }
 
 .iconLabel {
-    position: absolute;
     bottom: 0;
     display: none;
 }
