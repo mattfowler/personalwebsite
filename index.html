@@ -14,12 +14,13 @@
         $(document).ready(function () {
             $(window).unload(function () {});
 
-            bouncyIcons.dropIcons(["#1", "#2", "#3", "#4"], true);
+            bouncyIcons.dropIcons(["#1", "#2", "#3", "#4", "#5"], true);
 
             bouncyIcons.addBouncyLinkToElement("#1", "http://lnkd.in/Pc5FFH", 50);
             bouncyIcons.addBouncyLinkToElement("#2", "downloads/MattFowlerResume2012.pdf", 50);
             bouncyIcons.addBouncyLinkToElement("#3", "https://github.com/mattfowler", 50);
-            bouncyIcons.addBouncyLinkToElement("#4", "http://www.cyrusinnovation.com", 50);
+            bouncyIcons.addBouncyLinkToElement("#4", "http://www.smarterer.com/matt_f", 50);
+            bouncyIcons.addBouncyLinkToElement("#5", "http://www.cyrusinnovation.com", 50);
 
             bouncyIcons.addExpansionToElement(".iconlink", 30);
 
@@ -53,27 +54,34 @@
 <br>
 <p>agile software engineer</p>
 
-<div class="icon" id="1" style="left: 15%;">
+<div class="icon" id="1" style="left: 10%;">
     <div class="iconlink"
          style="background:#4875B4;background-image:url(img/linkedin-128.png);background-size:100px"></div>
     <label class="iconLabel" for="1">Linked in</label>
 </div>
 
-<div class="icon" id="2" style="left: 35%;">
+<div class="icon" id="2" style="left: 27%;">
     <div class="iconlink"
          style="background:#008b8b;background-image:url(img/blank-file-5-128.png);background-size:100px"></div>
     <label class="iconLabel" for="2">Resume</label>
 </div>
 
-<div class="icon" id="3" style="left: 55%;">
+<div class="icon" id="3" style="left: 44%;">
     <div class="iconlink"
          style="background:#00ced1;background-image:url(img/github-logo-transparent.png);background-size:100px"></div>
     <label for="3" class="iconLabel">Github</label>
 </div>
-<div class="icon" id="4" style="left: 75%;">
+
+<div class="icon" id="4" style="left: 61%;">
+    <div class="iconlink"
+         style="background:#4682b4;display: inline-block;background-image:url(img/smarterer-logo.png);background-size:100px"></div>
+    <label for="4" class="iconLabel">Smarterer</label>
+</div>
+
+<div class="icon" id="5" style="left: 78%;">
     <div class="iconlink"
          style="background:#4682b4;display: inline-block;background-image:url(img/cyrus.png);background-size:100px"></div>
-    <label for="4" class="iconLabel">Workplace</label>
+    <label for="5" class="iconLabel">Workplace</label>
 </div>
 
 </body>
