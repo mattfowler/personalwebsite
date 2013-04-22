@@ -53,7 +53,6 @@ bouncyIcons.addExpansionToElement = function (selector, expansionPixels) {
         if (timesMouseEnterCalled === 1) {
             var label = bouncyIcons.getLabelFromParentElement(object.target);
             label.fadeIn(325);
-
             $(object.target).animate({
                 width:"+=" + expansionPixels,
                 height:"+=" + expansionPixels,
@@ -63,6 +62,7 @@ bouncyIcons.addExpansionToElement = function (selector, expansionPixels) {
                 right:"+=" + half,
                 backgroundSize:"+=" + expansionPixels,
                 duration:325,
+                boxShadow: '0 0 40px #000000',
                 queue:true
             });
         }
@@ -81,6 +81,7 @@ bouncyIcons.addExpansionToElement = function (selector, expansionPixels) {
             right:"-= " + half,
             backgroundSize:"-=" + expansionPixels,
             duration:325,
+            boxShadow: '0 0 0 #000000',
             queue:true
         });
     });
