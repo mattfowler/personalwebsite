@@ -2,17 +2,7 @@
 <html>
 <title>Matthew Fowler - Software Engineer</title>
 <head>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="http://www.cornify.com/js/cornify.js"></script>
-    <script src="js/jquery.animate-shadow.js"></script>
-    <script src="js/bouncyicons.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script>
-
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -21,8 +11,20 @@
         ga('create', 'UA-72233534-1', 'auto');
         ga('send', 'pageview');
 
+    </script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="http://www.cornify.com/js/cornify.js"></script>
+    <script src="js/jquery.animate-shadow.js"></script>
+    <script src="js/bouncyicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>
         $(document).ready(function () {
-            $(window).unload(function () {});
+            $(window).unload(function () {
+            });
 
             bouncyIcons.dropIcons(["#1", "#2", "#3", "#4", "#5"], true);
 
@@ -38,7 +40,7 @@
             //Don't ask any questions about these lines and ruin the magic for yourself.
 
             $(".easter").mouseenter(function (object) {
-                $(".ponies").animate({top:"+=150"}, 250);
+                $(".ponies").animate({top: "+=150"}, 250);
             });
 
             var ponies = $(".ponies");
@@ -47,7 +49,7 @@
             });
 
             ponies.mouseleave(function (object) {
-                $(".ponies").animate({top:"-=150"}, 250);
+                $(".ponies").animate({top: "-=150"}, 250);
             });
         });
     </script>
@@ -61,9 +63,12 @@
 
 <br>
 <br>
+
 <h1>MATTHEW FOWLER</h1>
 <br>
+
 <p>agile software engineer</p>
+
 <div class="icon" id="1" style="left: 10%;">
     <div class="iconlink"
          style="background:#4875B4;background-image:url(img/linkedin-128.png);background-size:100px"></div>
