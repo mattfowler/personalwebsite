@@ -29,31 +29,43 @@
 }
 
 body {
-    background-color:#fffaf0;
+    background-color: #f6fcff;
 }
+
 p,label  {
-    font-family: Gill Sans, Verdana;
-    font-size: 11px;
-    line-height: 14px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
     text-align: center;
+    color: #5d5d5d;
+
 }
 
 .iconLabel {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
     bottom: 0;
     display: none;
+    color: #5d5d5d;
 }
 
 h1 {
-    font-family: Gill Sans, Verdana;
-    color: #444;
+    font-family: sans-serif;
+    font-style: normal;
+    color: #4499b5;
+    padding-top: 30px;
     margin: 0;
-    padding: 0px 0px 6px 0px;
-    font-size: 51px;
-    line-height: 44px;
-    letter-spacing: -2px;
+    font-size: 100px;
+    letter-spacing: 5px;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
