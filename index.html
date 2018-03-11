@@ -14,24 +14,27 @@
     </script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="http://www.cornify.com/js/cornify.js"></script>
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/ui/1.8.0/jquery-ui.min.js"
+            crossorigin="anonymous"></script>
+    <script src="https://www.cornify.com/js/cornify.js"></script>
     <script src="js/jquery.animate-shadow.js"></script>
     <script src="js/bouncyicons.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script>
         $(document).ready(function () {
-            $(window).unload(function () {
-            });
 
             bouncyIcons.dropIcons(["#1", "#2", "#3", "#4", "#5"], true);
 
             bouncyIcons.addBouncyLinkToElement("#1", "http://lnkd.in/Pc5FFH", 50);
             bouncyIcons.addBouncyLinkToElement("#2", "downloads/MattFowlerResume2012.pdf", 50);
             bouncyIcons.addBouncyLinkToElement("#3", "https://medium.com/coding-with-clarity", 50);
-            bouncyIcons.addBouncyLinkToElement("#4", "http://www.smarterer.com/matt_f", 50);
+            bouncyIcons.addBouncyLinkToElement("#4", "http://stackoverflow.com/users/2917326/matt-fowler", 50);
             bouncyIcons.addBouncyLinkToElement("#5", "https://github.com/mattfowler", 50);
 
 
@@ -89,8 +92,8 @@
 
 <div class="icon" id="4" style="left: 61%;">
     <div class="iconlink"
-         style="background:#add8e6;display: inline-block;background-image:url(img/smarterer-logo.png);background-size:100px"></div>
-    <label for="4" class="iconLabel">Smarterer</label>
+         style="background:#2980b9;display: inline-block;background-image:url(img/so.png);background-size:100px"></div>
+    <label for="4" class="iconLabel">Stack Overflow</label>
 </div>
 
 <div class="icon" id="5" style="left: 78%;">
