@@ -36,8 +36,8 @@ body {
 p, label {
     font-family: sans-serif;
     font-style: normal;
-    font-size: 25px;
     text-transform: uppercase;
+    font-size: 25px;
     letter-spacing: 2px;
     text-align: center;
     color: #5d5d5d;
@@ -46,18 +46,25 @@ p, label {
 .about-text {
     font-family: sans-serif;
     font-style: normal;
-    font-size: 15px;
-    letter-spacing: 2px;
+    text-transform: none;
+    font-size: 18px;
+    letter-spacing: normal;
     color: #5d5d5d;
-    text-align: center;
-    padding-right: 35px;
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .about-image {
     float: left;
     width: 200px;
     height: 200px;
-    padding: 35px;
+    padding: 35px 35px 35px 70px;
+}
+
+.about-section-header {
+    text-align: unset;
+    padding-left: 70px
 }
 
 .infoLink {
@@ -72,21 +79,27 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
-    color: #375eec;
+    color: #527fec;
     cursor: pointer;
+}
+
+.about-link {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: none;
+    text-decoration: none;
+    color: #527fec;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+.about-container {
+    padding-top: 40px;
 }
 
 .paddedIcon {
     padding-right: 5px;
-}
-
-@keyframes miniBounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40%, 60% {transform: translateY(-30px);}
-}
-
-.miniBounce:focus {
-    animation: miniBounce 1.5s ease-in-out;
 }
 
 .iconLabel {
@@ -105,19 +118,23 @@ a {
 }
 
 .icon:hover > .iconLabel {
-    opacity: 1; /* Completely visible. */
+    opacity: 1;
 }
 
 h1 {
     font-family: sans-serif;
     font-style: normal;
     color: #4499b5;
-    padding-top: 20px;
+    padding-top: 40px;
     margin: 0;
     font-size: 100px;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.about-header {
+    padding-top: 20px;
 }
 
 .modal {
