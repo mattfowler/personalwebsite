@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-<title>Matthew Fowler - Software Engineer</title>
+<title>Matthew Fowler - Software Engineering leader in Boston, MA</title>
 <head>
+    <meta name="description" content="Matthew Fowler - Software Engineering leader in Boston, MA" />
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-72233534-1', 'auto');
         ga('send', 'pageview');
@@ -14,93 +22,88 @@
     </script>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <script
-            src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-            crossorigin="anonymous"></script>
-    <script
-            src="https://code.jquery.com/ui/1.8.0/jquery-ui.min.js"
-            crossorigin="anonymous"></script>
-    <script src="https://www.cornify.com/js/cornify.js"></script>
-    <script src="js/jquery.animate-shadow.js"></script>
-    <script src="js/bouncyicons.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script>
-        $(document).ready(function () {
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-            bouncyIcons.dropIcons(["#1", "#2", "#3", "#4", "#5"], true);
-
-            bouncyIcons.addBouncyLinkToElement("#1", "http://lnkd.in/Pc5FFH", 50);
-            bouncyIcons.addBouncyLinkToElement("#2", "downloads/resume.pdf", 50);
-            bouncyIcons.addBouncyLinkToElement("#3", "https://medium.com/coding-with-clarity", 50);
-            bouncyIcons.addBouncyLinkToElement("#4", "http://stackoverflow.com/users/2917326/matt-fowler", 50);
-            bouncyIcons.addBouncyLinkToElement("#5", "https://github.com/mattfowler", 50);
-
-
-            bouncyIcons.addExpansionToElement(".iconlink", 30);
-
-            //Don't ask any questions about these lines and ruin the magic for yourself.
-
-            $(".easter").mouseenter(function (object) {
-                $(".ponies").animate({top: "+=150"}, 250);
-            });
-
-            var ponies = $(".ponies");
-            ponies.click(function (object) {
-                cornify_add();
-            });
-
-            ponies.mouseleave(function (object) {
-                $(".ponies").animate({top: "-=150"}, 250);
-            });
-        });
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
 </head>
 
 <body>
-<div class="ponies">
-    <img src="img/ponies.png"/>
-</div>
-<div class="easter"></div>
-
-<br>
-<br>
 
 <h1>Matt Fowler</h1>
-<br>
 
 <p>Full-Stack Software Engineering Leader</p>
 
-<div class="icon" id="1" style="left: 10%;">
-    <div class="iconlink"
-         style="background:#4875B4;background-image:url(img/linkedin-128.png);background-size:100px"></div>
-    <label class="iconLabel" for="1">Linked in</label>
+<div class="centered link-line">
+    <a id="about" href="about.html" class="infoLink"><i class="fas fa-user paddedIcon"></i>About</a>
+    <a id="contact" class="infoLink"><i class="fas fa-envelope paddedIcon"></i>Contact</a>
 </div>
 
-<div class="icon" id="2" style="left: 27%;">
-    <div class="iconlink"
-         style="background:#008b8b;background-image:url(img/blank-file-5-128.png);background-size:100px"></div>
-    <label class="iconLabel" for="2">Resume</label>
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Get in touch...</p>
+        <div id="root"></div>
+        <script type="text/javascript" src="static/js/main.c4840575.js"></script>
+    </div>
+
 </div>
 
-<div class="icon" id="3" style="left: 44%;">
-    <div class="iconlink"
-         style="background:rgb(70, 130, 180);display: inline-block;background-image:url(img/medium.png);background-size:100px;background-repeat:no-repeat"></div>
-    <label for="3" class="iconLabel">Blog</label>
-</div>
+<div>
+    <div class="icon miniBounce" id="1" style="left: 10%;" tabindex="1">
+        <a class="iconlink" href="http://lnkd.in/Pc5FFH"
+           style="background:#4875B4;background-image:url(img/linkedin-128.png);background-size:100px"></a>
+        <div class="iconLabel">Linked in</div>
+    </div>
 
-<div class="icon" id="4" style="left: 61%;">
-    <div class="iconlink"
-         style="background:#2980b9;display: inline-block;background-image:url(img/so.png);background-size:100px"></div>
-    <label for="4" class="iconLabel">Stack Overflow</label>
-</div>
+    <div class="icon" id="2" style="left: 27%;">
+        <a class="iconlink" href="downloads/resume.pdf"
+           style="background:#008b8b;background-image:url(img/blank-file-5-128.png);background-size:100px"></a>
+        <div class="iconLabel">Resume</div>
+    </div>
 
-<div class="icon" id="5" style="left: 78%;">
-    <div class="iconlink"
-         style="background:#00ced1;background-image:url(img/github-logo-transparent.png);background-size:100px"></div>
-    <label for="5" class="iconLabel">Github</label>
-</div>
+    <div class="icon" id="3" style="left: 44%;">
+        <a class="iconlink" href="https://medium.com/coding-with-clarity"
+           style="background:rgb(70, 130, 180);display: inline-block;background-image:url(img/medium.png);background-size:100px;background-repeat:no-repeat"></a>
+        <div class="iconLabel">Blog</div>
+    </div>
 
+    <div class="icon" id="4" style="left: 61%;">
+        <a class="iconlink" href="http://stackoverflow.com/users/2917326/matt-fowler"
+           style="background:#2980b9;display: inline-block;background-image:url(img/so.png);background-size:100px"></a>
+        <div class="iconLabel">Stack Overflow</div>
+    </div>
+
+    <div class="icon" id="5" style="left: 78%;">
+        <a class="iconlink" href="https://github.com/mattfowler"
+           style="background:#00ced1;background-image:url(img/github-logo-transparent.png);background-size:100px"></a>
+        <div class="iconLabel">Github</div>
+    </div>
+</div>
+<script>
+    const modal = document.getElementById('myModal');
+
+    const btn = document.getElementById('contact');
+
+    const span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    };
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
 </body>
 </html>

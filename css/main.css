@@ -1,71 +1,219 @@
 .icon {
-    top: -150px;
-    text-align:center;
+    margin-top: 200px;
+    text-align: center;
     width: 130px;
-    height:160px;
-    position: absolute
+    height: 160px;
+    position: absolute;
+    -webkit-transition: .35s ease-in-out; /* Safari */
+    transition: .35s ease-in-out;
+}
+
+
+.icon:hover {
+    -webkit-transform: scale(1.35); /* Safari */
+    transform: scale(1.35);
 }
 
 .iconlink {
-    height:100px;
-    width:100px;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
     border-radius: 15px;
-    display:inline-block;
-    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.0);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.easter {
-    width:10px;
-    height:10px;
-    bottom:0px;
-    left:100%;
-    float:right;
-}
-
-.ponies {
-    top: -150px;
-    right:0px;
-    position: absolute;
+.icon:hover > .iconlink {
+    box-shadow: 0 7px 15px rgba(0,0,0,0.5);
 }
 
 body {
     background-color: #f6fcff;
 }
 
-p,label  {
+p, label {
     font-family: sans-serif;
     font-style: normal;
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: bold;
     text-align: center;
     color: #5d5d5d;
+}
 
+.about-text {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #5d5d5d;
+    text-align: center;
+    padding-right: 35px;
+}
+
+.about-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 35px;
+}
+
+.infoLink {
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+a {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #375eec;
+    cursor: pointer;
+}
+
+.paddedIcon {
+    padding-right: 5px;
+}
+
+@keyframes miniBounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40%, 60% {transform: translateY(-30px);}
+}
+
+.miniBounce:focus {
+    animation: miniBounce 1.5s ease-in-out;
 }
 
 .iconLabel {
     font-family: sans-serif;
     font-style: normal;
     font-size: 15px;
-    padding-top: 10px;
+    padding-top: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-align: center;
     bottom: 0;
-    display: none;
+    opacity: 0;
     color: #5d5d5d;
+    -webkit-transition: .35s ease-in-out; /* Safari */
+    transition: .35s ease-in-out;
+}
+
+.icon:hover > .iconLabel {
+    opacity: 1; /* Completely visible. */
 }
 
 h1 {
     font-family: sans-serif;
     font-style: normal;
     color: #4499b5;
-    padding-top: 30px;
+    padding-top: 20px;
     margin: 0;
     font-size: 100px;
     letter-spacing: 5px;
-    font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+}
+
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    padding: 20px;
+    position: relative;
+}
+
+.centered {
+    text-align: center;
+}
+
+.link-line {
+    padding-top: 20px;
+}
+
+.error {
+    color: crimson;
+    padding: 20px;
+}
+
+.loading {
+    text-align: center;
+    z-index: 2;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
